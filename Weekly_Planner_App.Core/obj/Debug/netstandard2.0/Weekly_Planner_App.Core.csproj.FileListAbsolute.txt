@@ -1,0 +1,10 @@
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\bin\Debug\netstandard2.0\Weekly_Planner_App.Core.deps.json
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\bin\Debug\netstandard2.0\Weekly_Planner_App.Core.dll
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\bin\Debug\netstandard2.0\Weekly_Planner_App.Core.pdb
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.csproj.AssemblyReference.cache
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.AssemblyInfoInputs.cache
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.AssemblyInfo.cs
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.csproj.CoreCompileInputs.cache
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.dll
+C:\Users\zygim\source\repos\Weekly_Planner_App_Repo\Weekly_Planner_App.Core\obj\Debug\netstandard2.0\Weekly_Planner_App.Core.pdb

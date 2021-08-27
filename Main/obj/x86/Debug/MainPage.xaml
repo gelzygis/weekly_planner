@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Main.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Main"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d">
+    <Grid>
+        <!-- NAVIGATION -->
+        <NavigationView x:ConnectionId='2' x:Name="navView" 
+                                                                          
+                        IsBackEnabled="False"
+                        IsBackButtonVisible="Collapsed"
+                        OpenPaneLength="250"
+                        >
+            <NavigationView.MenuItems>
+                <!-- First Navigation Choice -->
+                <NavigationViewItem Tag="home" 
+                                    Icon="Home"     
+                                    Content="Home" />
+                <!-- Second Navigation Choice -->
+                <NavigationViewItem Tag="currentweek" 
+                                    Icon="Add" 
+                                    Content="Current Week" />
+                <!-- Third Navigation Choice -->
+                <NavigationViewItem Tag="nextweek" 
+                                    Icon="Add" 
+                                    Content="Next Week" />
+            </NavigationView.MenuItems>
+
+            <ScrollViewer>
+                <Frame x:ConnectionId='3' x:Name="ContentFrame"/>
+            </ScrollViewer>
+
+        </NavigationView>
+        <!-- Time and date -->
+    </Grid>
+</Page>
+

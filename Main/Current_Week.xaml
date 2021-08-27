@@ -1,0 +1,186 @@
+﻿<Page
+    x:Class="Main.Current_Week"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Main"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/Images/planets.jpg" 
+                        Stretch="None"
+                        />
+        </Grid.Background>
+        <!-- Main focus for week added -->
+        <TextBlock Text="Main focus for this week" 
+                   HorizontalAlignment="Center" 
+                   FontFamily="Libre Baskerville" 
+                   FontSize="28"                 
+                   Height="48" 
+                   VerticalAlignment="Top" 
+                   Margin="0,50,0,0" 
+                   FocusVisualPrimaryBrush="#FFF6F0EA"
+                   />
+        <Grid Width="510"
+              Height="150"
+              Margin="0,-750,0,0"
+              BorderBrush="#FFF6F0EA"
+              BorderThickness="1,1,1,1"
+              CornerRadius="5"
+              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <RadioButton Content="Book reading progress" 
+                     Margin="15,0,0,0" 
+                     VerticalAlignment="Center"
+                     FocusVisualPrimaryBrush="#FFF6F0EA"
+                     Grid.Row="0"
+                     />
+            <RadioButton Content="Finnish language learning focus" 
+                     Margin="15,0,0,0" 
+                     VerticalAlignment="Center"
+                     FocusVisualPrimaryBrush="#FFF6F0EA"
+                     Grid.Row="1"
+                     />
+            <RadioButton Content="C# programming language learning" 
+                     Margin="15,0,0,0" 
+                     VerticalAlignment="Center"
+                     FocusVisualPrimaryBrush="#FFF6F0EA"
+                     Grid.Row="2"
+                     />
+        </Grid>
+        <!-- Week completion progress bar added -->
+        <StackPanel Margin="0,-100,0,0">
+            <TextBlock Text="Week completion progress" 
+                       HorizontalAlignment="Center" 
+                       FontFamily="Libre Baskerville" 
+                       FontSize="28"                 
+                       Height="35" 
+                       Margin="0,400,0,0" 
+                       FocusVisualPrimaryBrush="#FFF6F0EA" 
+                       SelectionChanged="TextBlock_SelectionChanged" 
+                       Width="Auto" />
+            <StackPanel Orientation="Vertical">
+                <ProgressBar Height="35"
+                             x:Name="progressbar"
+                             Value="3"
+                             Maximum="7" 
+                             Width="500"
+                             Margin="0,5,0,0"
+                             CornerRadius="5" Background="#7F000000" Foreground="#CCE2E2E2"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Weekday selection added -->
+        <TextBlock Text="Weekday" 
+                   HorizontalAlignment="Center" 
+                   FontFamily="Libre Baskerville" 
+                   FontSize="28"                 
+                   Height="35" 
+                   Margin="0,433,0,612" 
+                   FocusVisualPrimaryBrush="#FFF6F0EA" 
+                   SelectionChanged="TextBlock_SelectionChanged" />
+        <Button Content="Monday"
+                x:Name="Monday_Button"
+                Click="Monday_Button_Click"
+                Margin="0,476,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+
+        <Button Content="Tuesday"
+                x:Name="Tuesday_Button"
+                Click="Tuesday_Button_Click"
+                Margin="0,526,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5"
+                >
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Wednesday" 
+                x:Name="Wednesday_Button"
+                Click="Wednesday_Button_Click"
+                Margin="0,576,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+            <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Thursday"
+                x:Name="Thursday_Button"
+                Click="Thursday_Button_Click"
+                Margin="0,626,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Friday"
+                x:Name="Friday_Button"
+                Click="Friday_Button_Click"
+                Margin="0,676,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Saturday"
+                x:Name="Saturday_Button"
+                Click="Saturday_Button_Click"
+                Margin="0,726,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Sunday"
+                x:Name="Sunday_Button"
+                Click="Sunday_Button_Click"
+                Margin="0,776,0,0" 
+                VerticalAlignment="Top" 
+                Height="40"
+                Width="500" 
+                HorizontalAlignment="Center"
+                CornerRadius="5">
+            <Button.Background>
+                <SolidColorBrush Color="#7F000000" Opacity="1"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Page>
